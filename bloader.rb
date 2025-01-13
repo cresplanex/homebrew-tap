@@ -10,7 +10,7 @@ class Bloader < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cresplanex/bloader/releases/download/v1.0.0/bloader_ 1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "04fa53e01dd5e1a9db565ac66f02a8962dfeff2f8550bf66b2c6db2a1ae1adaa"
+      sha256 "1a18329b456b5486057a45bc95841da80a12462ef29fab074a669525c5623cdd"
 
       def install
         bin.install "bloader"
@@ -18,7 +18,7 @@ class Bloader < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/cresplanex/bloader/releases/download/v1.0.0/bloader_ 1.0.0_Darwin_arm64.tar.gz"
-      sha256 "1a5edc5b39b0189c350c3be7716f25e24c4875289dd04acacd1046e93c602b94"
+      sha256 "330c89fca7232472b7f8cbb4c3378a85902ba72b70d21e4b238262d6db4ec8f0"
 
       def install
         bin.install "bloader"
@@ -30,7 +30,7 @@ class Bloader < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/cresplanex/bloader/releases/download/v1.0.0/bloader_ 1.0.0_Linux_x86_64.tar.gz"
-        sha256 "be91fcaa1a2371b041e13029ae0f6e77e3215b7dcaa94a25ddf8fca327fd8754"
+        sha256 "d1957acc05db7dac847240a2e8b0590e19454b2a4909ce264984b85213fe2b8d"
 
         def install
           bin.install "bloader"
@@ -40,7 +40,7 @@ class Bloader < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/cresplanex/bloader/releases/download/v1.0.0/bloader_ 1.0.0_Linux_arm64.tar.gz"
-        sha256 "3d7b12995a48d6a07a07915beadac8bcec33fe54e961c8d4b789cd1e16aa201a"
+        sha256 "1a919d85b50f73bac295c8af3c47d01ecb7f6769a5beb656d113dc749e7e79a8"
 
         def install
           bin.install "bloader"
