@@ -5,20 +5,20 @@
 class Bloader < Formula
   desc ""
   homepage ""
-  version "1.0.6"
+  version "1.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cresplanex/bloader/releases/download/v1.0.6/bloader_1.0.6_Darwin_x86_64.tar.gz"
-      sha256 "596f9e909fd0146280b9b5a33340c41885c6358927b42fbf33419aa07f6a03b1"
+      url "https://github.com/cresplanex/bloader/releases/download/v1.0.7/bloader_1.0.7_Darwin_x86_64.tar.gz"
+      sha256 "119120a896e28c43a8856b7ffa442c1d21657b14963fdb7d13f3a2d83ebd2a29"
 
       def install
         bin.install "bloader"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cresplanex/bloader/releases/download/v1.0.6/bloader_1.0.6_Darwin_arm64.tar.gz"
-      sha256 "43f06e25742efb30ba6fcb3438c9a8d61bb03bd86069a160a3b517591d3a165e"
+      url "https://github.com/cresplanex/bloader/releases/download/v1.0.7/bloader_1.0.7_Darwin_arm64.tar.gz"
+      sha256 "142e741a363e14ea2fe3f5728ecac8223be4066a6f33d43b1c67b0824ae7a827"
 
       def install
         bin.install "bloader"
@@ -29,8 +29,8 @@ class Bloader < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cresplanex/bloader/releases/download/v1.0.6/bloader_1.0.6_Linux_x86_64.tar.gz"
-        sha256 "c2fbf00000f9230680378cf505ceeac1839d19cc308972dec65f833c8ba3fd33"
+        url "https://github.com/cresplanex/bloader/releases/download/v1.0.7/bloader_1.0.7_Linux_x86_64.tar.gz"
+        sha256 "047af2a26b9b99026a8762dcfe611942935b0dbbad22ff12359dce3d903b1d25"
 
         def install
           bin.install "bloader"
@@ -39,8 +39,8 @@ class Bloader < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cresplanex/bloader/releases/download/v1.0.6/bloader_1.0.6_Linux_arm64.tar.gz"
-        sha256 "e6ded100f2b51bfa4a55565c184edb201f9c045b49eb720cbeeea7f01ef36aac"
+        url "https://github.com/cresplanex/bloader/releases/download/v1.0.7/bloader_1.0.7_Linux_arm64.tar.gz"
+        sha256 "0b00a13c72718c708dddaac6dd4ba286759d8ba4ce94352959b83e7ee7259c19"
 
         def install
           bin.install "bloader"
